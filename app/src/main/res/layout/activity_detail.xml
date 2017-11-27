@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.youp.Kuiper_Youp.views.SquareFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/article_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:background="#FF00FF" />
+
+        </com.example.youp.Kuiper_Youp.views.SquareFrameLayout>
+
+        <TextView
+            android:id="@+id/article_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/article_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            tools:text="asd" />
+
+        <TextView
+            android:id="@+id/article_url"
+            android:autoLink="web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            tools:text="asd" />
+
+        <CheckBox android:id="@+id/article_isLiked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="liked"/>
+
+
+    </LinearLayout>
+</ScrollView>
